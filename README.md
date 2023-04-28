@@ -15,6 +15,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 - Figma
 - Git e Github
+- Vercel
 
 ## 🔖 Layout
 
@@ -28,3 +29,6 @@ Acesse a demo do site [clicando aqui](https://shopping-cart-git-main-gusales.ver
 
 - <a href="https://www.youtube.com/@ManualdoDev">Youtube - Do Zero ao Deploy - Canal Manual do Dev</a>
 - <a href="https://developers.mercadolivre.com.br/pt_br">API do Mercado Livre</a>
+- <a href="https://vercel.com/">Plataforma de Deploy - Vercel</a>
+
+<!-- https://shopping-cart-git-main-gusales.vercel.app/ -->
