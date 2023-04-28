@@ -1,0 +1,29 @@
+header{
+    height: 5rem;
+    background: #CD081D;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.8rem;
+    gap: 3.2rem;
+}
+
+.shopping-cart-icon{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+    flex: 1;
+}
+
+.header-icon{
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+h1{
+    font-size: 2.4rem;
+    color: #fff;
+}

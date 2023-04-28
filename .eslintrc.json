@@ -3,5 +3,8 @@
     "browser": true,
     "es2021": true
   },
+  "rules": {
+    "jsx-quotes": [2, "prefer-double"]
+  },
   "extends": ["@rocketseat/eslint-config/react"]
 }
