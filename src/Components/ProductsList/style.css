@@ -1,0 +1,19 @@
+h1{
+  color: black;
+}
+
+.products-list{
+  padding: 2rem;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  gap: 1.6rem;
+  justify-content: center;
+}
+
+@media (min-width: 700px){
+  .products-list{
+    padding: 2rem 4rem;
+  }
+}
