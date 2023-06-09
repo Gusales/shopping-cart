@@ -1,14 +1,15 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { ClipLoader } from 'react-spinners';
 import { Card } from "../../@types/ProductCard";
 import { fetchProducts } from "../../api/fetchProducts";
+import AppContext from "../../context/AppContext";
 import ProductCard from "../ProductCard";
 import "./style.css";
 
-
 export default function ProductsList() {
-  const [products, setProducts] = useState([]);
-  const [isLoading, setIsLoading] = useState(false)
+
+  const { products, setProducts, isLoading, setIsLoading }: any = useContext(AppContext)
+
   useEffect(() => {
     setIsLoading(true)
     fetchProducts("smartphones").then((res) => {
