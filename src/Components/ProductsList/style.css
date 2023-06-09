@@ -12,6 +12,20 @@ h1{
   justify-content: center;
 }
 
+.loadingProducts{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  width: 100%;
+  margin-top: 20rem;
+}
+
+.loadingProducts h3{
+  color: #ff0000;
+  font-weight: bold;
+}
+
 @media (min-width: 700px){
   .products-list{
     padding: 2rem 4rem;
