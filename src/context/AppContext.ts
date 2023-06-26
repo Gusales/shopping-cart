@@ -1,5 +1,8 @@
-import { createContext } from "react";
+import { createContext } from 'react'
 
-const AppContext = createContext('')
+import { Value } from '../@types/ContextType'
+const INITIAL_STATE: Value = {}
+
+const AppContext = createContext(INITIAL_STATE)
 
 export default AppContext

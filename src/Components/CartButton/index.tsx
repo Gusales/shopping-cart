@@ -1,15 +1,15 @@
-import { useState } from "react";
+import { useContext } from 'react'
 
-import { FaShoppingCart } from "react-icons/fa";
-import "./style.css";
+import { FaShoppingCart } from 'react-icons/fa'
+import './style.css'
+import AppContext from '../../context/AppContext'
 
 export default function CartButton() {
-  const [cartProductsQntd, setCartProductsQntd] = useState(0);
-
+  const { setShowModal } = useContext(AppContext)
   return (
-    <button className="cart-button">
+    <button className="cart-button" onClick={() => setShowModal(true)}>
       <FaShoppingCart />
-      <span className="cart-status"> {cartProductsQntd} </span>
+      <span className="cart-status"> 0 </span>
     </button>
-  );
+  )
 }

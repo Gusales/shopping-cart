@@ -1,8 +1,8 @@
-import { BsBagFill } from "react-icons/bs";
-import SearchForm from "../SearchForm";
+import { BsBagFill } from 'react-icons/bs'
+import SearchForm from '../SearchForm'
 
-import CartButton from "../CartButton";
-import "./style.css";
+import CartButton from '../CartButton'
+import './style.css'
 
 export default function Header() {
   return (
@@ -16,5 +16,5 @@ export default function Header() {
 
       <CartButton />
     </header>
-  );
+  )
 }

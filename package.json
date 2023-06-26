@@ -1,7 +1,7 @@
 {
   "name": "shopping-cart",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,7 +13,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
-    "react-spinners": "^0.13.8"
+    "react-spinners": "^0.13.8",
+    "sass": "^1.63.6"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",

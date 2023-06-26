@@ -7,7 +7,7 @@ import './style.css'
 
 export default function SearchForm() {
   const [searchValue, setSearchValue] = useState('')
-  const { setProducts, setIsLoading }: any = useContext(AppContext)
+  const { setIsLoading, setProducts } = useContext(AppContext)
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault()
