@@ -5,11 +5,10 @@ import { fetchProducts } from '../../api/fetchProducts'
 import AppContext from '../../context/AppContext'
 import ProductCard from '../ProductCard'
 import './style.css'
-import { Value } from '../../@types/ContextType'
 import CartModal from '../CartModal'
 
 export default function ProductsList() {
-  const { products, setProducts, isLoading, setIsLoading }: Value =
+  const { products, setProducts, isLoading, setIsLoading } =
     useContext(AppContext)
 
   useEffect(() => {

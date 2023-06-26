@@ -1,13 +1,13 @@
-import { motion } from "framer-motion";
-import { Card } from "../../@types/ProductCard";
-import formatCurrency from "../../utils/formatCurrency";
-import "./style.css";
+import { motion } from 'framer-motion'
+import { Card } from '../../@types/ProductCard'
+import formatCurrency from '../../utils/formatCurrency'
+import './style.css'
 
 export default function ProductCard({ title, thumbnail, price }: Card) {
   const animation = {
     variantA: { scale: 1 },
     variantB: { scale: 1.05 },
-  };
+  }
 
   return (
     <motion.div
@@ -17,7 +17,7 @@ export default function ProductCard({ title, thumbnail, price }: Card) {
       whileHover="variantB"
     >
       <img
-        src={thumbnail.replace(/\w\.jpg/gi, "W.jpg")}
+        src={thumbnail.replace(/\w\.jpg/gi, 'W.jpg')}
         alt="Imagem do Produto"
         className="product-image"
       />
@@ -27,5 +27,5 @@ export default function ProductCard({ title, thumbnail, price }: Card) {
         <button className="product-button">Adicionar ao carrinho</button>
       </div>
     </motion.div>
-  );
+  )
 }
