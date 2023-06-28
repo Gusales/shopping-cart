@@ -1,23 +1,29 @@
 .modal{
   width: 100%;
   height: 100%;
-  position: absolute;
+
+  position: fixed;
   top: 0;
+  
   background-color: #000000ba;
+
+  display: flex;
+  justify-content: flex-end;
+  animation: appearModal 400ms ease-in-out backwards;
 }
 
 .modal-cart{
   height: 100vh;
   width: 30%;
-
-  position: inherit;
+  
   right: 0;
   top: 0;
-
+  
   display: grid;
   grid-template-rows: max-content 1fr max-content;
-
+  
   background-color: #ffffff;
+  animation: entering 400ms 100ms ease-in-out backwards;
 }
 
 .modal-header{
@@ -93,5 +99,55 @@
         background: #d32d3e;
       }
     }
+  }
+}
+
+.modal-exit {
+  animation: exit 400ms ease-in-out backwards;
+}
+
+@keyframes entering {
+  from {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+}
+
+@keyframes exit {
+  to{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes appearModal {
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .modal-cart{
+    width: 50%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+  .modal-cart{
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal{
+    justify-content: center;
+  }
+
+  .modal-cart{
+    width: 100%;
   }
 }

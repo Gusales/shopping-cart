@@ -2,8 +2,8 @@ import { createContext } from 'react'
 
 import { Value } from '../@types/ContextType'
 const INITIAL_STATE: Value = {
-  isLoading: false,
   products: [],
+  isLoading: false,
   showModal: false,
   setShowModal: () => false,
   setIsLoading: () => false,
